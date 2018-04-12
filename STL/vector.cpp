@@ -32,9 +32,9 @@ void vector_Operating()
 	vector<int> v2(5, 0);
 	v1.push_back(1);//从尾部插入一个
 	v1.insert(v1.begin() + 1, 6);//通过迭起器插入
-	
 	v1.swap(v2);//两个vector替换
-	v1.assign(v2.begin() + 2, v2.end());//替换
+	v1.assign(v2.begin() + 2, v2.end());//替换,使用V2的迭代器
+	v1.assign(5, 2);//替换5个2
 	v1.pop_back();//从尾部删除一个
 	//v1.clear();//清空
 	reverse(v1.begin(), v1.end());//翻转
